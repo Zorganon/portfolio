@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ 
+body {
+    padding-top: 50px;
+    position: relative;
+}
+h1 {
+    font-family: 'Montserrat';
+}
+
+.navbar {
+    background-color: #222;
+    border-width: 2px;
+    border-color: #232323;
+}

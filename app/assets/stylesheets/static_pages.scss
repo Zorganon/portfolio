@@ -1,0 +1,55 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#slide-img1 {
+    background-image: url("dog.jpg");
+    background-size: cover;
+    height: 800px;
+    
+}
+
+#dog-text {
+    position: relative;
+    left: 120px;
+    text-align: left
+    
+}
+
+.spacer {
+    background-color: black;
+    height: 100px;
+    z-index: 1;
+}
+
+#slide-img2 {
+    background-image: url("contactbkgd.jpg");
+    background-size: cover;
+    padding-bottom: 500px;
+}
+
+#slide-img2 h3, p {
+    color: black;
+    padding: 50px;
+}
+
+#slide-img3 {
+    background-image: url("contactbkgd.jpg");
+    height: 500px;
+}
+
+#slide-img4 container{
+    padding-top: 50px;
+}
+
+
+
+h1,
+h2,
+h3 {
+    color: #EEE;
+}
+
+.title {
+    padding: 15px;
+}
+

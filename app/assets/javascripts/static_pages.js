@@ -1,0 +1,1 @@
+$('#slide-img1').stellar();
