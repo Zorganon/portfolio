@@ -30,9 +30,10 @@ h3 {
 }
 
 .about-me {
-    background-image: url("contactbkgd.jpg");
-    background-size: cover;
-    padding-bottom: 500px;
+    background-image: url("aboutme.jpg");
+    background-size: 100%;
+    padding-top: 100px;
+    padding-bottom: 400px;
 }
 
 .about-me h3, p {
@@ -40,12 +41,21 @@ h3 {
 }
 
 .contact {
-    background-image: url("contactbkgd.jpg");
-    height: 500px;
+    background-image: url("contact.jpg");
+    background-size: 100%;
+    padding-top: 100px;
+    height: 800px;
 }
 
-#slide-img4 container{
-    padding-top: 50px;
+.contact .input-group{
+    padding: 25px;
+}    
+
+.projects {
+    background-image: url("cliff.jpg");
+    background-size: 100%;
+    padding-top: 100px;
+    padding-bottom: 500px;
 }
 
 .title {
