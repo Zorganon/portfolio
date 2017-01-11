@@ -11,34 +11,71 @@
 
 <section class="about-me">
   <div class="container">
+    <h2>Full Stack Developer</h3>
 <!-- this slide should intro me as a Dev -->
-    <h3>Full Stack Developer</h3>
-    <div class="about-box col-lg-6">
-      <p>
-        My name is Dan Hudson, I am a full stack developer based in the Minneapolis area.  I have spent the past year improving and training my development skills.  I am seeking full or part time work using these skills I have honed.
-      </p>
+<!--
+    <h3>Skills</h3>
+    <ul>
+      <li><p>Ruby on Rails</p></li>
+      <li><p>JavaScript</p></li>
+      <li><p>HTML5</p></li>
+      <li><p>CSS3</p></li>
+      <li><p>Sass</p></li>
+      <li><p>jQuery</p></li>
+      <li><p>WordPress</p></li>
+    </ul> -->
+    <div class="row">
+      <div class="about-box col-lg-6">
+        <p>
+          My name is Dan Hudson, I am a full stack developer based in the Minneapolis area.  I have spent the past year improving and training my development skills.  I am seeking full or part time work using these skills I have honed.
+        </p>
+      </div>
     </div>
-    <div class ="about-box col-lg-6">
-      <ul>
-        <li>
-          <h3>Skills</h3>
-          <ul>
-            <li><p>Ruby on Rails</p></li>
-            <li><p>JavaScript</p></li>
-            <li><p>HTML5</p></li>
-            <li><p>CSS3</p></li>
-            <li><p>Sass</p></li>
-            <li><p>jQuery</p></li>
-            <li><p>WordPress</p></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="about-box">
-      <h3>Personality</h3>
-      <ul>
-        <li><p>I am </p></li>
-      </ul>
+    <div class="row">
+      <div class ="about-box">
+        <div class="skills ">
+          <feature class="panel panel-default col-lg-4 col-sm-6">
+            <div class="panel-body">
+              <%= image_tag("HTML5_logo.png", :class => "thumbnail img img-rounded") %>
+            </div>
+          </feature>
+          <feature class="panel panel-default col-lg-4 col-sm-6">
+            <div class="panel-body">
+              <%= image_tag("CSS3_logo.png", :class => "thumbnail img img-rounded") %>
+            </div>
+          </feature>
+          <feature class="panel panel-default col-lg-4 col-sm-6">
+            <div class="panel-body">
+              <%= image_tag("Ruby_logo.png", :class => "thumbnail img img-rounded") %>
+            </div>
+          </feature>
+          <feature>
+            <%= image_tag("Sass_Logo_Color.png", :class => "thumbnail img img-rounded") %>
+          </feature>
+        </div>
+        <div class="skills">
+          <feature class="panel panel-default col-lg-4 col-sm-6">
+            <div class="panel-body">
+              <%= image_tag("Ruby_on_Rails-logo.png", :class => "thumbnail img img-rounded") %>
+            </div>
+          </feature>
+          <feature class="panel panel-default col-lg-4 col-sm-6">
+            <div class="panel-body">
+              <%= image_tag("jQuery-logo.png", :class => "thumbnail img img-rounded") %>
+            </div>
+          </feature>
+          <feature class="panel panel-default col-lg-4 col-sm-6">
+            <div class="panel-body">
+              <%= image_tag("javascript_logo.png", :class => "thumbnail img img-rounded") %>
+            </div>
+          </feature>
+          <feature class="panel panel-default col-lg-4 col-sm-6">
+            <div class="panel-body">
+              <%= image_tag("GitHub_Logo.png", :class => "thumbnail img img-rounded") %>
+            </div>
+          </feature>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -74,7 +111,7 @@
       
       <div class="input-group">
         <span class="input-group-addon">How are you feeling today?</span>
-        <input type="text" list="feelings"/>
+        <input type="text" class="form-control" list="feelings"/>
         <datalist id="feelings">
           <option value="Happy">
           <option value="Curious">

@@ -8,6 +8,19 @@ h3 {
     color: #EEE;
 }
 
+#mantras {
+    background: url("space.jpg");
+}
+.spacer {
+    background-color: black;
+    height: 60px;
+    z-index: 1;
+}
+.title {
+    padding: 15px;
+}
+
+/* Top of the page, Banner Area */
 .banner {
     background-image: url("dog.jpg");
     background-size: 100%;
@@ -20,14 +33,7 @@ h3 {
     text-align: left
 }
 
-#mantras {
-    background: url("space.jpg");
-}
-.spacer {
-    background-color: black;
-    height: 60px;
-    z-index: 1;
-}
+/* About-me and Skills */
 
 .about-me {
     background-image: url("aboutme.jpg");
@@ -40,16 +46,41 @@ h3 {
     color: black;
 }
 
+.about-box feature{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 3px 3px grey;
+    height: 150px;
+    margin: 10px;
+}
+
+.about-box .panel-body{
+    height: 150px;
+    width: auto;
+}
+.about-box .img{
+    max-width: 100%;
+}
+
+/* Contact Section */
 .contact {
     background-image: url("contact.jpg");
     background-size: 100%;
     padding-top: 100px;
     height: 800px;
 }
+.input-group-addon{
+    box-shadow: 4px 3px 3px grey;
+}
+.form-control{
+    box-shadow: 3px 3px 3px grey;
+}
 
 .contact .input-group{
     padding: 25px;
 }    
+
+/* Projects Section */
 
 .projects {
     background-image: url("cliff.jpg");
@@ -57,8 +88,3 @@ h3 {
     padding-top: 100px;
     padding-bottom: 500px;
 }
-
-.title {
-    padding: 15px;
-}
-
