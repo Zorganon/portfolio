@@ -22,7 +22,11 @@
     </div>
     <div class="field">
       <%= f.label :image, :class => "field-label" %><br>
-      <%= f.text_field :image, :class => "form-field" %>
+      <%= f.text_field :image_url, :class => "form-field" %>
+    </div>
+    <div class="field">
+      <%= f.label :site, :class => "field-label" %><br>
+      <%= f.text_field :url, :class => "form-field" %>
     </div>
     <div class="actions">
       <%= f.submit %>

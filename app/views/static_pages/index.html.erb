@@ -31,6 +31,9 @@
         </p>
       </div>
     </div>
+    
+    <%= render @skills %>
+    
     <div class="row">
       <div class ="about-box">
         <div class="skills ">
@@ -87,8 +90,8 @@
 <section class="projects">
   <div class="container">
     <h2>Projects</h2>
-    <div class="panel">
-      
+    <div class="row">
+      <%= render @projects %>
     </div>
   </div>
 <!-- this slide should showcase projects -->

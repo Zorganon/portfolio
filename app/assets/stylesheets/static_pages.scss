@@ -2,15 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import 'colors';
+
+
 h1,
 h2,
 h3 {
-    color: #EEE;
+    color: black;
 }
 
-#mantras {
-    background: url("space.jpg");
-}
 .spacer {
     background-color: black;
     height: 60px;
@@ -46,21 +46,23 @@ h3 {
     color: black;
 }
 
-.about-box feature{
-    /*background-color: white;
-    border-radius: 8px;
-    box-shadow: 2px 3px 3px grey;*/
+.skill-box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px grey;
     height: 150px;
-    margin: 10px;
+    margin: 20px;
+}
+
+.skill-img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5px;
 }
 
 .about-box .panel-body{
     height: 150px;
     width: auto;
-}
-.about-box .img{
-    max-width: 100%;
-    max-height: 100%;
 }
 
 /* Contact Section */
@@ -88,4 +90,8 @@ h3 {
     background-size: 100%;
     padding-top: 100px;
     padding-bottom: 500px;
+}
+
+.project-tile {
+    background-color: gray;
 }
