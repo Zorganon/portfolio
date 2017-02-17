@@ -1,15 +1,9 @@
 <feature>
 	<div class="col-xs-12 col-md-6 col-lg-6">
 		<div class="panel-body project-tile">
-		  <p><%= project.name %></p>
-		  <%= image_tag(project.image_url, :class => 'thumbnail img img-rounded')%>
+		  <h3><%= project.name %></h3>
+		  <%= link_to image_tag(project.image_url, :class => 'thumbnail img img-rounded'), project.url, target: :_blank %>
 		  <p><%= project.description %></p>
-		  <p><%= project.url %></p>
-		  <div class="project-links">
-			  <%= link_to 'Show', project %>
-				<%= link_to 'Edit', edit_project_path(project) %>
-				<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
-			</div>
 		</div>
 	</div>
 </feature>
