@@ -33,12 +33,16 @@ h3 {
     text-align: left
 }
 
+#banner h3, h1{
+    text-shadow: 2px 2px 9px white;
+}
+
 /* About-me and Skills */
 
 #about-me {
     background-image: url("aboutme.jpg");
     background-size: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 40px;
 }
 
@@ -84,11 +88,16 @@ h3 {
     background-image: url("cliff.jpg");
     background-size: 100%;
     padding-top: 100px;
-    padding-bottom: 500px;
 }
 
 .project-tile {
     background-color: gray;
     border-radius: 20px;
     box-shadow: 2px 3px 3px black;
+    margin: auto;
+}
+
+.tile{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
