@@ -13,7 +13,7 @@
   <div class="container">
     <h2>Full Stack Developer</h3>
     <div class="row">
-      <div class="about-box col-lg-6">
+      <div class="about-box col-lg-6"> 
         <p>
           My name is Dan Hudson, I am a full stack developer based in the Minneapolis area.  I have spent the past year improving and training my development skills.  I am seeking full or part time work using these skills I have honed.
         </p>
@@ -40,43 +40,34 @@
 <section id="contact">
   <div class="container">
     <h2>Contact Me</h2>
-    <div class="form">
-      <div class="input-group">
-        <span class="input-group-addon">Name</span>
-        <input type="text" class="form-control" placeholder="Name"/>
+    <%= form_tag("/static_pages/mantras") do %>
+      <div class="row">
+        <div class="input-group">
+          <%= label_tag :name %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Name" %> 
+        </div>
+        
+        <div class="input-group">
+          <%= label_tag :email %>
+          <%= email_field_tag :email, nil, class: "form-control", placeholder: "Email Address" %>
+        </div>
+        
+        <div class="input-group">
+          <%= label_tag :feelings, "How are you Feeling?" %>
+          <%= text_field_tag :feelings, nil, class: "form-control", list: "feelings" %>
+          <datalist id="feelings">
+            <% @feelings.each do |feel| %>
+              <option value="<%= feel %>"></option>
+            <% end %>
+          </datalist>
+        </div>
+        
+        <div class="input-group">
+          <%= label_tag :message %>
+          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Type your message" %>
+        </div>
       </div>
-      
-      <div class="input-group">
-        <span class="input-group-addon">Email</span>
-        <input type="email" class="form-control" placeholder="Email Address"/>
-      </div>
-      
-      <div class="input-group">
-        <span class="input-group-addon">How are you feeling today?</span>
-        <input type="text" class="form-control" list="feelings"/>
-        <datalist id="feelings">
-          <option value="Happy">
-          <option value="Curious">
-          <option value="Anxious">
-          <option value="Stressed">
-          <option value="Hopeful">
-          <option value="Big League">
-          <option value="Nervous">
-          <option value="Angry">
-          <option value="Annoyed">
-          <option value="Irritated">
-          <option value="Joyful">
-          <option value="Tired">
-          <option value="Hungry">
-          <option value="Bashful">          
-          <option value="I am the Pope">
-        </datalist>
-      </div>
-      
-      <div class="input-group">
-        <span class="input-group-addon">Message</span>
-        <input type="text-area" class="form-control"/>
-      </div>
-    </div><!--end of the form -->
+      <%= submit_tag "Send" %>
+    <% end %><!--end of the form -->
   </div>
 </section>
