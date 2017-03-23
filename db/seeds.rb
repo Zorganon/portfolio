@@ -20,5 +20,5 @@ projects = Project.create([{name: 'Sophisticated Airhead', description: 'This is
     {name: 'Travel Package Site', description: 'A demo travel package site built using Rails, complete with payment processing', image_url: 'travel-blog.png', url: 'https://organon-travel.herokuapp.com'},
     {name: 'Cocktail Blog', description: 'This is a blog built in Rails with comments, ratings, and archive', image_url: 'cocktail-blog.png', url: 'http://cocktail-blog.herokuapp.com'},
     {name: 'Recipe Sorting API', description: 'This project is a simple program built in Sinatra, which has both a browser interface and API', image_url: 'Sinatralogo.png', url: 'https://github.com/Zorganon/sort_challenge'},
-    {name: 'Northern Lights Sailing Club', description: 'This is the live site for the Northern Lights Sailing Club.  Built using Wordpress, this site has many layers and features including protected member content.', image_url: 'nlsc.png', url: ''},
+    {name: 'Northern Lights Sailing Club', description: 'This is the live site for the Northern Lights Sailing Club.  Built using Wordpress, this site has many layers and features including protected member content.', image_url: 'nlsc.png', url: 'https://nlsc.org'},
     ])
