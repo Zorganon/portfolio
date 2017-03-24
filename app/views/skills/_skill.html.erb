@@ -1,3 +1,7 @@
 <div class="skill-box col-sm-4 col-md-3 col-lg-2">
-  <%= image_tag( skill.image_url, :class => 'skill-img') %>
+  <%= image_tag( skill.image_url, 
+    class: 'skill-img', 
+    'data-toggle': 'tooltip', 
+    'data-placement': "top", 
+    title: "Don't ya just love jQuery?" ) %>
 </div>
