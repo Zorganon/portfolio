@@ -44,30 +44,28 @@
       <div class="row">
         <div class="input-group">
           <%= label_tag :name %>
-          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Name" %> 
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Name", required: true %> 
         </div>
         
         <div class="input-group">
           <%= label_tag :email %>
-          <%= email_field_tag :email, nil, class: "form-control", placeholder: "Email Address" %>
+          <%= email_field_tag :email, nil, class: "form-control", placeholder: "Email Address", required: true %>
         </div>
         
         <div class="input-group">
           <%= label_tag :feelings, "How are you Feeling?" %>
-          <%= text_field_tag :feelings, nil, class: "form-control", list: "feelings" %>
-          <datalist id="feelings">
-            <% @feelings.each do |feel| %>
-              <option value="<%= feel %>"></option>
-            <% end %>
-          </datalist>
+          <%= select_tag :feelings, options_for_select(@feelingOptions), class: "form-control", list: "feelings", required: true %>
         </div>
         
         <div class="input-group">
           <%= label_tag :message %>
-          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Type your message" %>
+          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Type your message", required: true %>
         </div>
       </div>
-      <%= submit_tag "Send" %>
+      <%= submit_tag("Send", class: 'submit-button') %>
     <% end %><!--end of the form -->
+    <div class="thanks-div">
+      <p>Thank you for the note!  Don't ya just love jQuery?!</p>
+    </div>
   </div>
 </section>

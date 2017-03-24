@@ -20,6 +20,10 @@ h3 {
     padding: 15px;
 }
 
+body {
+    background-color: light_blue;
+}
+
 /* Top of the page, Banner Area */
 #banner {
     background-image: url("dog.jpg");
@@ -80,7 +84,11 @@ h3 {
 
 #contact .input-group{
     padding: 25px;
-}    
+}
+
+.thanks-div {
+    visibility: hidden;
+}
 
 /* Projects Section */
 
@@ -100,4 +108,13 @@ h3 {
 .tile{
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+/********** thanks page **********/
+.button-box {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px;
 }
