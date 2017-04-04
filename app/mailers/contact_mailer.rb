@@ -3,13 +3,12 @@ class ContactMailer < ApplicationMailer
   
   def send_contact_email(name, email, message, feelings)
     @name = name
-    @email = email
     @message = message
     @feelings = feelings
     
     mail( :from => email,
-    :to => 'dan.the.hudson@gmail.com',
-    :subject => 'Portfolio Site Contact')
+      :to => 'dan.the.hudson@gmail.com',
+      :subject => 'Portfolio Site Contact')
   end
   
 end
